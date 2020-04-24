@@ -1,6 +1,9 @@
 const EXPRESS = require("express");
 const app = new EXPRESS();
 
+// Static content base Directory
+app.use(EXPRESS.static("public"));
+
 /*
 Start the server on the specified port
 */
